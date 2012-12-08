@@ -1,0 +1,22 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="DogFW Controller Test">
+      <directory>controllers</directory>
+    </testsuite>
+    <testsuite name="DogFW Lead Test">
+      <directory>leads</directory>
+    </testsuite>
+    <testsuite name="DogFW Class Test">
+      <directory>classes</directory>
+    </testsuite>
+    <testsuite name="DogFW Model Test">
+      <directory>models</directory>
+    </testsuite>
+    <testsuite name="DogFW Library Test">
+      <directory>libraries</directory>
+    </testsuite>
+    <testsuite name="DogFW Helper Test">
+      <directory>helpers</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
