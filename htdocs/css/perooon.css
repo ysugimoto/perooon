@@ -1,14 +1,16 @@
 #mainperooon {
-  padding: 100px 20px 0;
-  font-size: 200px;
+  margin-top: 40px;
   color: #999;
   text-align: center;
   position: relative;
-  text-shadow: 1px 1px 5px #000;
 }
-#mainperooon span {
-  display: inline-block;
+
+#perooon_svg {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: scale(0, 0);
+  margin: 0 auto;
 }
+
 #mainperooon span.wink {
   -webkit-animation-name: wink;
   -webkit-animation-delay: 3s;
@@ -107,4 +109,46 @@ text-align: center;
 .perooon_count span {
 font-size: 30px;
 margin: 0 3px;
+}
+#perooon_facebook {
+  margin: 30px;
+  float: right;
+}
+
+#perooon_github {
+z-index: 100;
+position: fixed;
+display:block;
+top: 40px;
+right: -140px;
+padding: 0.5em 10em;
+-webkit-transform: rotate(45deg);
+background: #207ce5; /* Old browsers */
+background: -moz-linear-gradient(top,  #207ce5 0%, #499bea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#207ce5), color-stop(100%,#499bea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #207ce5 0%,#499bea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #207ce5 0%,#499bea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #207ce5 0%,#499bea 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #207ce5 0%,#499bea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207ce5', endColorstr='#499bea',GradientType=0 ); /* IE6-9 */
+-webkit-box-shadow: 1px 1px 5px #333, -1px -1px 5px #333;
+-moz-box-shadow: 1px 1px 5px #333, -1px -1px 5px #333;
+-o-box-shadow: 1px 1px 5px #333, -1px -1px 5px #333;
+-ms-box-shadow: 1px 1px 5px #333, -1px -1px 5px #333;
+box-shadow: 1px 1px 5px #333, -1px -1px 5px #333;
+color: #fff;
+text-decoration: none;
+text-shadow: 1px 1px 1px #333;
+text-align: center;
+font-size: 0.9em;
+font-weight: bold;
+-webkit-transition: color 0.3s linear;
+-moz-transition: color 0.3s linear;
+-o-transition: color 0.3s linear;
+-ms-transition: color 0.3s linear;
+transition: color 0.3s linear;
+}
+
+#perooon_github:hover {
+  color: #ffc;
 }

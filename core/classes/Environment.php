@@ -447,7 +447,6 @@ class SZ_Environment implements Growable
 				include($app->path . 'config/' . $setting . '.php');
 				$this->{'_' . $setting} = ( isset($$setting) ) ? $$setting : array(); // not typo.
 				$loaded = TRUE;
-                break;
 			}
 		}
 		if ( ! $loaded )

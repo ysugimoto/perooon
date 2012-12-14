@@ -164,6 +164,7 @@ class Application
 			if ( is_dir($this->path . $path) )
 			{
 				Autoloader::register($this->path . $path, $loadType, $this->prefix);
+                Autoloader::register($this->path . $path, $loadType);
 			}
 		}
 		

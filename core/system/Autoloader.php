@@ -134,10 +134,17 @@ class Autoloader
 		$prefix = '';
 		$class  = $className;
 		
-		list($prefix,$class) = ( Seezoo::hasPrefix($className) )
-		                          ? Seezoo::removePrefix($className, TRUE)
-		                          : array(self::$aliasClass[$className], $className);
-		
+        if ( Seezoo::hasPrefix($className) )
+        {
+		    list($prefix,$class) = Seezoo::removePrefix($className, TRUE);
+
+        }
+        else
+        {
+		    list($prefix, $class) = ( isset(self::$aliasClass[$className]) )
+                                      ? array(self::$aliasClass[$className],  $className)
+                                      : array('', $className);
+        }
 		
 		$dirs = ( isset(self::$loadDir[$prefix]) )
 		          ? self::$loadDir[$prefix]
